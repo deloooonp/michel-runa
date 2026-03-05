@@ -13,9 +13,7 @@ function App() {
   const [open, setOpen] = useState(false);
   return (
     <main className="max-w-300 mx-auto">
-      {!open && (
-        <WelcomeOverlay guestName="Budi Santoso" onOpen={() => setOpen(true)} />
-      )}
+      {!open && <WelcomeOverlay onOpen={() => setOpen(true)} />}
       <Hero />
       <SaveTheDate />
       <Profile />
