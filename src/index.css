@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@400;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Montserrat", sans-serif;
+
+  --color-primary: #a57c43;
+  --color-secondary: #fefefe;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  position: relative;
+}
+
+/* Background blur — di belakang konten */
+body::before {
+  content: "";
+  position: fixed; /* fixed = diem waktu scroll */
+  inset: 0;
+  background-image: url("/background.webp");
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px);
+  transform: scale(1.1);
+  z-index: -1;
+}
+
+main {
+  position: relative;
+  z-index: 1; /* konten tetap di atas, gak kena blur */
+  background-image: url("/background.webp");
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@layer utilities {
+  .text-display {
+    @apply text-6xl md:text-8xl;
+  }
+
+  .text-section-title {
+    @apply text-3xl md:text-4xl italic;
+  }
+}
