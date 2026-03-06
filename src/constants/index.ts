@@ -41,9 +41,18 @@ export const ACCOUNTS = [
 
 export const WEDDING_EVENT = [
   {
+    type: "Akad Nikah",
+    date: "Minggu, 29 Maret 2026",
+    time: "09.00 - 12.00",
+    address: "Cebolek Kidul, Margoyo, Kab. Pati, 59154",
+    maps: "https://maps.app.goo.gl/bZCjoLPEvmy8rbR1A?g_st=ipc",
+    googleMapsEmbed:
+      "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3963.3523541872237!2d111.05976307499364!3d-6.603060993390827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMzYnMTEuMCJTIDExMcKwMDMnNDQuNCJF!5e0!3m2!1sen!2sid!4v1772783285511!5m2!1sen!2sid",
+  },
+  {
     type: "Resepsi",
     date: "Minggu, 29 Maret 2026",
-    time: "11.00 - Selesai",
+    time: "12.00 - Selesai",
     address: "Cebolek Kidul, Margoyo, Kab. Pati, 59154",
     maps: "https://maps.app.goo.gl/bZCjoLPEvmy8rbR1A?g_st=ipc",
     googleMapsEmbed:
