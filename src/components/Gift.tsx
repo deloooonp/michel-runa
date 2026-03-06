@@ -1,25 +1,7 @@
 import { useState } from "react";
+import { ACCOUNTS } from "@/constants";
 
-const accounts = [
-  {
-    bank: "BCA",
-    holder: "Michael Utama Nugroho",
-    number: "6631559589",
-  },
-  {
-    bank: "BRI",
-    holder: "Runa Aryahiyatus Shina",
-    number: "8546006081",
-  },
-];
-
-const bankColor: Record<string, string> = {
-  BCA: "#0060af",
-  BRI: "#f37021",
-  BNI: "#f37021",
-};
-
-function CreditCard({ bank, holder, number }: (typeof accounts)[0]) {
+function CreditCard({ bank, holder, number, logo }: (typeof ACCOUNTS)[0]) {
   const [copied, setCopied] = useState(false);
 
   const copy = () => {
@@ -30,19 +12,11 @@ function CreditCard({ bank, holder, number }: (typeof accounts)[0]) {
 
   return (
     <div className="relative w-full overflow-hidden rounded-2xl shadow-xl">
-      {/* Image card sebagai background */}
       <img src="/card.webp" alt="card" className="w-full h-auto object-cover" />
 
-      {/* Konten di atas image */}
       <div className="absolute inset-0 p-6 flex flex-col justify-between">
-        {/* Top — bank name */}
         <div className="flex justify-end">
-          <span
-            className="text-xl font-bold tracking-wider"
-            style={{ color: bankColor[bank] ?? "#fff" }}
-          >
-            {bank}
-          </span>
+          <img src={logo} alt={bank} className="w-20 h-auto" />
         </div>
 
         {/* Bottom — info + button */}
@@ -91,7 +65,7 @@ export default function Gift() {
       </p>
 
       <div className="flex flex-col gap-4 w-full max-w-md md:max-w-lg lg:max-w-xl">
-        {accounts.map((acc) => (
+        {ACCOUNTS.map((acc) => (
           <CreditCard key={acc.bank} {...acc} />
         ))}
       </div>

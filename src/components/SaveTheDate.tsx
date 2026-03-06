@@ -1,4 +1,4 @@
-import useCountdown from "../hooks/useCountdown";
+import useCountdown from "@/hooks/useCountdown";
 
 function CountBox({ val, label }: { val: number; label: string }) {
   return (
@@ -22,7 +22,7 @@ export default function SaveTheDate() {
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      <div className="absolute inset-0 bg-[#b8892a] opacity-85" />
+      <div className="absolute inset-0 bg-primary opacity-85" />
 
       <div className="relative z-10 bg-white rounded-b-full rounded-t-full w-full max-w-[650px] px-8 py-10 flex flex-col items-center gap-5 shadow-2xl">
         <div className="w-full rounded-full overflow-hidden">

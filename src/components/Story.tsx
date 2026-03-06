@@ -1,23 +1,4 @@
-const stories = [
-  {
-    photo: "",
-    title: "Perkenalan",
-    date: "24 juli 2019",
-    desc: "Semua berawal dari perkenalan singkat dari sosial media. Awalnya hanya bertukar pesan biasa tapi lama kelaman tumbuhlah rasa yang lebih dari sekedar teman. Disitu lah kisah kamu dimulai.",
-  },
-  {
-    photo: "",
-    title: "Lamaran",
-    date: "8 Juni 2025",
-    desc: "Setelah kisah yang cukup panjang bersama, Akhirnya pada tanggal 8 juni 2025 niat serius pun muncul untuk melamar dan meminta restu dari orang tua. ",
-  },
-  {
-    photo: "",
-    title: "Pernikahan",
-    date: "29 Maret 2026",
-    desc: "Lalu kini pada tanggal 29 Maret 2026 insyaAllah kami akan memulai lembaran baru dalam hidup kami. menyatukan hati pada ikatan suci. Sebuah ibadah panjang dalam bentuk pernikahan. Mohon doa dan restu agar dilancarkan🤍",
-  },
-];
+import { STORIES } from "@/constants";
 
 export default function Story() {
   return (
@@ -26,7 +7,7 @@ export default function Story() {
         Love Story
       </h2>
 
-      {stories.map((s, i) => (
+      {STORIES.map((s, i) => (
         <div
           key={i}
           className="w-full md:w-1/2 mx-auto bg-white/80 backdrop-blur-sm rounded-2xl overflow-hidden border border-primary/20 shadow-md"

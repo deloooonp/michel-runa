@@ -1,10 +1,7 @@
+import { COUPLES, WEDDING_EVENT } from "@/constants";
 import { useState } from "react";
 
-interface LandingProps {
-  onOpen: () => void;
-}
-
-export default function WelcomeOverlay({ onOpen }: LandingProps) {
+export default function WelcomeOverlay(onOpen: () => void) {
   const [opening, setOpening] = useState(false);
 
   const handleOpen = () => {
@@ -34,13 +31,13 @@ export default function WelcomeOverlay({ onOpen }: LandingProps) {
         </div>
 
         <h1 className="text-display text-white drop-shadow-md leading-tight">
-          Michael <br />
-          <span className="text-4xl italic text-secondary">&amp;</span> <br />
-          Runa
+          {COUPLES[0].panggilan} <br />
+          <span className="text-7xl italic text-secondary">&amp;</span> <br />
+          {COUPLES[1].panggilan}
         </h1>
 
         <p className="text-lg text-white/90 tracking-[2px] font-medium drop-shadow-sm">
-          29 . 03 . 2026
+          {WEDDING_EVENT[0].date}
         </p>
 
         <button

@@ -1,17 +1,4 @@
-const mempelai = [
-  {
-    foto: "/pria.png",
-    panggilan: "Michael",
-    nama: "Michael Utama Nugroho",
-    keterangan: "Putra pertama Bapak Djatmiko Mukti Husodo dan Ibu Nasih",
-  },
-  {
-    foto: "/wanita.png",
-    panggilan: "Runa",
-    nama: "Runa Aryahiyatus Shina",
-    keterangan: "Putri pertama Bapak Nur Khamid dan Ibu Muslikah",
-  },
-];
+import { COUPLES } from "@/constants";
 
 export default function Profile() {
   return (
@@ -27,7 +14,7 @@ export default function Profile() {
         Ya Allah semoga ridho-Mu tercurah mengiringi pernikahan kami
       </p>
 
-      {mempelai.map((m, i) => (
+      {COUPLES.map((m, i) => (
         <>
           {i === 1 && (
             <span key="amp" className="text-7xl italic">
