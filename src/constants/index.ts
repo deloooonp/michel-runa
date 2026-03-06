@@ -27,7 +27,7 @@ export const COUPLES = [
 export const ACCOUNTS = [
   {
     bank: "BCA",
-    holder: "Michael Utama Nugroho",
+    holder: "Michel Utama Nugroho",
     number: "6631559589",
     logo: "/bca.png",
   },
