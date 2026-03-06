@@ -65,7 +65,7 @@ export const STORIES = [
     photo: "/story1.png",
     title: "Perkenalan",
     date: "24 juli 2019",
-    desc: "Semua berawal dari perkenalan singkat dari sosial media. Awalnya hanya bertukar pesan biasa tapi lama kelaman tumbuhlah rasa yang lebih dari sekedar teman. Disitu lah kisah kamu dimulai.",
+    desc: "Semua berawal dari perkenalan singkat dari sosial media. Awalnya hanya bertukar pesan biasa tapi lama kelaman tumbuhlah rasa yang lebih dari sekedar teman. Disitu lah kisah kami dimulai.",
   },
   {
     photo: "/story2.png",
