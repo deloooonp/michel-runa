@@ -1,7 +1,7 @@
 import { COUPLES, WEDDING_EVENT } from "@/constants";
 import { useState } from "react";
 
-export default function WelcomeOverlay(onOpen: () => void) {
+export default function WelcomeOverlay({ onOpen }: { onOpen: () => void }) {
   const [opening, setOpening] = useState(false);
 
   const handleOpen = () => {
