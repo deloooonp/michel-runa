@@ -13,8 +13,7 @@ export default function Story() {
           className="w-full md:w-1/2 mx-auto bg-white/80 backdrop-blur-sm rounded-2xl overflow-hidden border border-primary/20 shadow-md"
         >
           <div className="w-full aspect-4/3 bg-[#c9a84c]/30 flex items-center justify-center">
-            <span className="text-white/40 text-sm">📷 {s.title}</span>
-            {/* swap ↑ dengan: <img src={s.photo} className="w-full h-full object-cover" /> */}
+            <img src={s.photo} className="w-full h-full object-cover" />
           </div>
 
           <div className="px-6 py-6 flex flex-col items-center text-center gap-2">

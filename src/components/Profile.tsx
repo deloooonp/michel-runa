@@ -32,9 +32,11 @@ export default function Profile() {
                 className="object-cover w-full h-full"
               />
             </div>
-            <h2 className="text-4xl italic mt-2">{m.panggilan}</h2>
-            <h3 className="text-2xl text-primary font-semibold">{m.nama}</h3>
-            <p className="font-sans text-md text-gray-500">{m.keterangan}</p>
+            <div className="flex flex-col gap-2 mt-2">
+              <h2 className="text-4xl italic">{m.panggilan}</h2>
+              <h3 className="text-2xl text-primary font-semibold">{m.nama}</h3>
+              <p className="font-sans text-md">{m.keterangan}</p>
+            </div>
           </div>
         </>
       ))}

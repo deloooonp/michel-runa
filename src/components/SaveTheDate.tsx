@@ -29,7 +29,7 @@ export default function SaveTheDate() {
           <img
             src="/couple.png"
             alt="Foto Pasangan"
-            className="w-full h-full object-cover"
+            className="w-full h-1/2 object-cover"
           />
         </div>
 
@@ -54,8 +54,8 @@ export default function SaveTheDate() {
           <CountBox val={t.detik} label="Detik" />
         </div>
 
-        <button className="p-3 rounded-xl text-white text-sm tracking-[3px] uppercase font-semibold bg-primary">
-          📅 Simpan Tanggal
+        <button className="p-3 rounded-xl text-white text-lg bg-primary cursor-pointer hover:bg-primary/80 transition-colors">
+          Simpan Tanggal
         </button>
       </div>
     </div>
