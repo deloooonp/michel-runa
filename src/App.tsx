@@ -8,6 +8,7 @@ import Gift from "./components/Gift";
 import Footer from "./components/Footer";
 import WelcomeOverlay from "./components/WelcomeOverlay";
 import { useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -22,6 +23,7 @@ function App() {
       <Story />
       <Gift />
       <Footer />
+      <Analytics />
     </main>
   );
 }
