@@ -11,40 +11,39 @@ function CreditCard({ bank, holder, number, logo }: (typeof ACCOUNTS)[0]) {
   };
 
   return (
-    <div className="relative w-full overflow-hidden rounded-2xl shadow-xl">
-      <img src="/card.webp" alt="card" className="w-full h-auto object-cover" />
+    <div className="relative w-full overflow-hidden rounded-2xl shadow-xl flex flex-col">
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/card.webp"
+          alt="card background"
+          className="w-full h-full object-cover"
+        />
+      </div>
 
-      <div className="absolute inset-0 p-6 flex flex-col justify-between">
-        <div className="flex justify-end">
-          <img src={logo} alt={bank} className="w-20 h-auto" />
+      <div className="relative z-10 p-6 flex flex-col justify-between h-full flex-1 text-left">
+        <div className="flex justify-end mb-6">
+          <img src={logo} alt={bank} className="w-16 h-auto opacity-90" />
         </div>
 
-        {/* Bottom — info + button */}
         <div className="flex flex-col gap-3">
-          {/* No rekening */}
           <div className="flex flex-col items-end">
-            <p className="text-sm tracking-[3px] uppercase text-white/50">
-              No. Rekening
-            </p>
-            <p className="font-sans text-lg tracking-widest text-white">
+            <p className="text-sm uppercase text-white/50">No. Rekening</p>
+            <p className="font-sans text-sm md:text-lg tracking-widest text-white">
               {number}
             </p>
           </div>
 
-          {/* Nama */}
           <div>
             <p className="text-sm tracking-[3px] uppercase text-white/50">
               Atas Nama
             </p>
-            <p className="font-sans tracking-wide uppercase text-white">
+            <p className="font-sans text-sm md:text-md uppercase text-white">
               {holder}
             </p>
           </div>
-
-          {/* Copy */}
           <button
             onClick={copy}
-            className="font-sans w-full py-2 rounded-lg text-sm tracking-[2px] uppercase text-white border border-white/30 hover:bg-white/10 transition-colors cursor-pointer"
+            className="font-sans w-full py-2 rounded-lg text-sm uppercase text-white border border-white/30 hover:bg-white/10 transition-colors cursor-pointer"
           >
             {copied ? "✓ Tersalin!" : "Salin Nomor"}
           </button>
@@ -56,7 +55,7 @@ function CreditCard({ bank, holder, number, logo }: (typeof ACCOUNTS)[0]) {
 
 export default function Gift() {
   return (
-    <div className="py-12 px-6 flex flex-col items-center gap-6 text-center w-full mx-auto bg-primary/50 text-white">
+    <div className="py-12 px-6 flex flex-col items-center gap-6 text-center w-full mx-auto bg-primary/70 text-white">
       <h2 className="text-section-title">Wedding Gift</h2>
 
       <p className="text-lg leading-relaxed w-full md:w-3/4 lg:w-1/2">

@@ -3,7 +3,7 @@ import { STORIES } from "@/constants";
 export default function Story() {
   return (
     <div className="px-4 py-10 flex flex-col gap-8">
-      <h2 className="font-display text-4xl italic text-primary text-center">
+      <h2 className="font-display text-4xl italic text-white text-center bg-primary/70 p-2 w-full">
         Love Story
       </h2>
 

@@ -10,11 +10,11 @@ export default function Hero() {
       />
 
       <div className="relative z-10 flex flex-col items-center justify-center gap-3 text-white text-center">
-        <p className="text-lg">The Wedding Of</p>
+        <p className="text-lg md:text-2xl">The Wedding Of</p>
         <h1 className="text-display flex flex-col items-center gap-3">
           {COUPLES[0].panggilan} <span>&amp;</span> {COUPLES[1].panggilan}
         </h1>
-        <p className="text-lg">{WEDDING_EVENT[0].date}</p>
+        <p className="text-lg md:text-xl">{WEDDING_EVENT[0].date}</p>
       </div>
     </div>
   );
